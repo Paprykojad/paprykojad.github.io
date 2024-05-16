@@ -1,0 +1,77 @@
+#mem {
+    position: absolute;
+    top: 15%;
+}
+#zart {
+    position: absolute;
+    top: 40%;
+}
+#mysl {
+    position: absolute;
+    top: 65%;
+}
+
+.gp {
+    position: absolute;
+    right: 15%;
+    background-color: #1d1d1d;
+    height: 10%;
+    width: 20%;
+    border: solid 3px;
+    border-color: #313131;
+    border-radius: 15px;
+    font-size: 24px;
+    font-family: fantasy;
+    color: white;
+}
+
+.gp:hover {
+    background-color: #313131;
+    border-color: #1d1d1d;
+}
+
+.p {
+    object-fit: contain;
+    width: 90%;
+    height: 90%;
+}
+
+p {
+    font-size: 32px;
+    word-wrap: break-word;
+}
+
+img {
+    border-radius: 20px;
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+
+#gl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #1d1d1d;
+    color: white;
+    border: solid 3px;
+    border-color: #313131;
+    border-radius: 20px;
+    position: absolute;
+    top: 8%;
+    left: 7%;
+    width: 36%;
+    height: 84%;
+}
+
+.vl {
+    border: solid;
+    width: 3px;
+    height: 94%;
+    border-color: #1d1d1d;
+    background-color: #1d1d1d;
+    position: absolute;
+    left: 50%;
+    top: 3%;
+}

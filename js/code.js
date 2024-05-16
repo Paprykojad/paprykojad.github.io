@@ -23,21 +23,39 @@ function genzart() {
     return x
 }
 
+function wyswietlmysl() {
+    let v = document.getElementById('imysl').value
+    document.getElementById('gl').innerHTML = ''
+    let x = document.createElement('p')
+    x.appendChild(document.createTextNode(v))
+    let n = document.createAttribute('class')
+    n.value = 'p'
+    x.setAttributeNode(n)
+    document.getElementById('gl').appendChild(x)
+
+}
+
 function genmysl() {
     let x = document.createElement('input')
     x.type = 'text'
-    x.id = 'mysl'
-    x.name = 'mysl'
+    x.id = 'imysl'
 
     let y = document.createElement('label')
-    y.htmlFor = 'mysl'
+    y.htmlFor = 'imysl'
     y.appendChild(document.createTextNode('Myśl roku'))
-    let w = document.createElement('div')
+
     let b = document.createElement('input')
     b.type = 'button'
-    b.onclick = null
+    b.addEventListener('click', () => wyswietlmysl())
+
+    let w = document.createElement('div')
     w.appendChild(y)
     w.appendChild(x)
+    w.appendChild(document.createElement('br'))
     w.appendChild(b)
+    // let clasa = document.createAttribute('class')
+    // clasa = 'p'
+    // w.setAttributeNode(clasa)
     return w
 }
+

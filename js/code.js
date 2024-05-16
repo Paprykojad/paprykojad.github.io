@@ -46,6 +46,7 @@ function genmysl() {
 
     let b = document.createElement('input')
     b.type = 'button'
+    b.value = 'Dodaj'
     b.addEventListener('click', () => wyswietlmysl())
 
     let w = document.createElement('div')
@@ -53,9 +54,6 @@ function genmysl() {
     w.appendChild(x)
     w.appendChild(document.createElement('br'))
     w.appendChild(b)
-    // let clasa = document.createAttribute('class')
-    // clasa = 'p'
-    // w.setAttributeNode(clasa)
     return w
 }
 
